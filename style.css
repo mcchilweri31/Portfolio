@@ -33,7 +33,8 @@ nav{
 }
 
 .logo{
-    width: 230px;
+    width: 160px;
+    height: auto;
 }
 
 nav ul li{
@@ -104,12 +105,14 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 60%;
+    text-align: justify;
 }
 
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: grey;
+    margin-bottom: 20px;
 }
 
 .tab-titles{
@@ -142,7 +145,8 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 30px 0;
+    margin: 16px 0;
+    line-height: 1.6;
 }
 
 .tab-contents ul li span{
@@ -366,6 +370,13 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    nav ul li a.resume-btn {
+        display: inline-block;
+        background-color: white;
+        color: orangered !important;
+        padding: 10px 14px;
+        border-radius: 5px;
+    }
     .sub-title{
         font-size: 40px;
     }
@@ -377,6 +388,7 @@ nav .fa-solid{
     }
     .about-col-2{
     font-size: 14px;
+    text-align: justify;
     }
     .tab-links{
         font-size: 16px;
@@ -389,9 +401,61 @@ nav .fa-solid{
         font-size: 14px;
         flex-basis: 100%; /* I added this to fix the error in the copyright section */
     }
+  .intro-box {
+    max-width: 100%;
+    padding: 15px;
+  }
 }
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
 }
+
+/* ---------------------Changes Version 1-------------------------------*/
+
+.intro-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.resume-btn {
+  background-color: orangered;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #ff652f;
+}
+
+.sub-experience {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #ccc;
+  list-style-type: disc;
+}
+
+.sub-experience li {
+  margin-bottom: 6px;
+}
+
+.cert-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cert-image img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 69, 0, 0.5);
+}
+
