@@ -459,3 +459,35 @@ nav .fa-solid{
   box-shadow: 0 0 12px rgba(255, 69, 0, 0.5);
 }
 
+.highlight-box {
+  background-color: orangered;
+  padding: 12px;
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cloud-box {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .highlight-line {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .cloud-box h1 {
+    font-size: 32px;
+  }
+
+  .cloud-box p {
+    font-size: 16px;
+  }
+}
