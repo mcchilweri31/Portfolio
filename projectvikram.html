@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Vikram | Manthan Chilweri</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <div id="header" style="height: 30vh; background-image: none;">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="manthan_logo_large_white.png" class="logo" alt="Logo" /></a>
+        <ul id="sidemenu">
+          <li><a href="index.html#header">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Project Title and Description -->
+  <div class="container">
+    <h1 class="sub-title">Project Vikram</h1>
+    <p style="margin-bottom: 40px;">
+      <strong>Vikram</strong> is my Level 1 Tripoli High-Powered Rocketry certification rocket. Named after Dr. Vikram Sarabhai, this rocket features a hand-fabricated body tube, plywood fins, reinforced motor mount, and custom avionics bay.
+      The rocket reached an apogee of 2304 ft and a peak velocity of 572 ft/s, achieving a successful recovery and certification.
+    </p>
+
+    <!-- Embedded Launch Video -->
+    <video width="100%" height="auto" controls>
+      <source src="CDAT6527.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Image Gallery -->
+    <div class="project-gallery" style="margin-top: 50px;">
+      <img src="project_vikram_gallery/IMG_7365.jpg" alt="Vikram on Launchpad" style="width:100%; margin-bottom: 30px;" />
+      <img src="project_vikram_gallery/IMG_E7443.JPG" alt="Post-launch Team Photo" style="width:100%; margin-bottom: 30px;" />
+      <img src="project_vikram_gallery/GVCD7022.JPG" alt="Rocket Under Construction" style="width:100%; margin-bottom: 30px;" />
+      <img src="project_vikram_gallery/Flight Simulation H100.png" alt="OpenRocket Flight Simulation" style="width:100%; margin-bottom: 30px;" />
+      <img src="project_vikram_gallery/OpenRocket Design.png" alt="OpenRocket Design Diagram" style="width:100%; margin-bottom: 30px;" />
+    </div>
+
+    <a href="index.html#projects" class="btn">← Back to Projects</a>
+  </div>
+
+  <!-- Script for responsive menu -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
